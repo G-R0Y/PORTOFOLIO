@@ -18,57 +18,57 @@ window.addEventListener('scroll', function () {
 
 // efecto lluvia
 
-// function rain() {
-//     let amount = 15;
-//     let presentation = document.querySelector('.presentation');
-//     let i = 0
-//     while (i < amount) {
-//         let start = document.createElement('i');
+function rain() {
+    let amount = 8;
+    let presentation = document.querySelector('.presentation');
+    let i = 0
+    while (i < amount) {
+        let start = document.createElement('i');
 
-//         let size = Math.random() * 2 + 1;
-//         let posX = Math.random() * window.innerWidth - 250;
-//         let delay = Math.random() * -10;
-//         let duration = 7 + Math.random() * 3;
+        let size = Math.random() * 2 + 1;
+        let posX = Math.random() * window.innerWidth - 250;
+        let delay = Math.random() * -10;
+        let duration = 7 + Math.random() * 3;
 
-//         start.style.width = size + 'px';
-//         start.style.left = posX + 'px';
-//         start.style.animationDelay = delay + 's'
-//         start.style.animationDuration = duration + 's'
-//         start.style.zIndex = 1
-//         presentation.appendChild(start);
-//         i++
-//     }
-// }
-// rain();
+        start.style.width = size + 'px';
+        start.style.left = posX + 'px';
+        start.style.animationDelay = delay + 's'
+        start.style.animationDuration = duration + 's'
+        start.style.zIndex = 1
+        presentation.appendChild(start);
+        i++
+    }
+}
+rain();
 
 // efecto estrellas
 
-// function mStart() {
-//     let amount = 1500;
-//     let limit = document.querySelector('.limit');
-//     let i = 0
-//     while (i < amount) {
-//         let dotStart = document.createElement('i');
+function mStart() {
+    let amount = 200;
+    let limit = document.querySelector('.limit');
+    let i = 0
+    while (i < amount) {
+        let dotStart = document.createElement('i');
 
-//         let size = Math.random() * 2 + 1;
-//         let posX = Math.random() * window.innerWidth;
-//         let posY = Math.random() * window.innerWidth;
-//         let delay = Math.random() * 5;
-//         let duration = Math.random() * 5 + 2;
+        let size = Math.random() * 2 + 1;
+        let posX = Math.random() * window.innerWidth;
+        let posY = Math.random() * window.innerWidth;
+        let delay = Math.random() * 5;
+        let duration = Math.random() * 5 + 2;
 
-//         dotStart.style.width = size + 'px';
-//         dotStart.style.height = size + 'px';
-//         dotStart.style.left = posX + 'px';
-//         dotStart.style.top = posY + 'px';
-//         dotStart.style.animationDelay = delay + 's'
-//         dotStart.style.animationDuration = duration + 's'
+        dotStart.style.width = size + 'px';
+        dotStart.style.height = size + 'px';
+        dotStart.style.left = posX + 'px';
+        dotStart.style.top = posY + 'px';
+        dotStart.style.animationDelay = delay + 's'
+        dotStart.style.animationDuration = duration + 's'
 
 
-//         limit.appendChild(dotStart);
-//         i++
-//     }
-// }
-// mStart();
+        limit.appendChild(dotStart);
+        i++
+    }
+}
+mStart();
 
 // efectro navnab
 
