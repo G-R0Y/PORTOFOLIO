@@ -80,7 +80,7 @@ if(window.width > 576 ) {
 }else{
     window.addEventListener('scroll', function () {
         let header = document.querySelector('.header');
-        let scrollBajo = window.scrollY - 100
+        let scrollBajo = window.scrollY +20
         header.style.backgroundColor = 'hsla(201, 59%, 10%, ' + scrollBajo / 500 + ')'
     }) 
 }
