@@ -14,8 +14,8 @@
     --text-color: #f0f8ff;
 }
 
-body {
-    overflow-x: hidden;
+.body {
+    /* overflow-x: hidden; */
     background-color: #0a1c26;
     width: 100%;
 
@@ -26,10 +26,10 @@ body {
 /* ------------------ */
 
 .header {
-    position: fixed;
     width: 100%;
     z-index: 100;
-
+    /* border: 1px solid red; */
+    position: fixed;
 }
 
 .encabezado {
@@ -41,6 +41,7 @@ body {
     max-width: var(--width-desktop);
     margin: auto;
     height: 70px;
+    /* border: 1px solid red; */
 
 }
 
@@ -109,6 +110,7 @@ body {
 
 .presentation img#luna {
     mix-blend-mode: screen;
+
     z-index: 1;
 }
 
@@ -128,7 +130,7 @@ body {
     color: #dbc9bf;
     font-weight: 900;
     left: 30%;
-    bottom: 45%;
+    bottom: 46%;
 }
 
 .presentation .nombre .dinamyc-txt {
@@ -139,7 +141,7 @@ body {
     color: #dbc9bf;
     font-weight: 900;
     left: 31%;
-    bottom: 33%;
+    bottom: 31%;
 }
 
 .presentation>i {
@@ -203,9 +205,8 @@ body {
     /* height: 100vh; */
 }
 
-.about-me:before {
-    content: '';
-    position: absolute;
+.degra {
+    position: relative;
     top: -50px;
     left: -50%;
     width: 200%;
@@ -655,6 +656,7 @@ footer h5 {
         width: 40px;
 
     }
+
     .presentation .nombre .static-txt {
         font-size: 38px;
         padding: 5px;
@@ -695,6 +697,7 @@ footer h5 {
         height: 100px;
         width: 130px;
     }
+
     .presentation .nombre .static-txt {
         font-size: 35px;
         padding: 5px;
@@ -752,10 +755,11 @@ footer h5 {
     footer img {
         height: 200px;
     }
+
     .encabezado nav .icon-menu {
         display: contents;
     }
-    
+
     .encabezado nav .nav {
         display: none;
     }
