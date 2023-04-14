@@ -71,14 +71,19 @@ function mStart() {
 mStart();
 
 // efectro navnab
-
-window.addEventListener('scroll', function () {
+if(window.width > 576 ) {
+ window.addEventListener('scroll', function () {
     let header = document.querySelector('.header');
     let scrollBajo = window.scrollY - 300
     header.style.backgroundColor = 'hsla(201, 59%, 10%, ' + scrollBajo / 500 + ')'
-
-
 })
+}else{
+    window.addEventListener('scroll', function () {
+        let header = document.querySelector('.header');
+        let scrollBajo = window.scrollY - 100
+        header.style.backgroundColor = 'hsla(201, 59%, 10%, ' + scrollBajo / 500 + ')'
+    }) 
+}
 
 
 ///efceto esfera

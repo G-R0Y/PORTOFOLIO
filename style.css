@@ -28,7 +28,6 @@ body {
 .header {
     width: 100%;
     z-index: 100;
-    /* border: 1px solid red; */
     position: fixed;
 }
 
@@ -41,7 +40,7 @@ body {
     max-width: var(--width-desktop);
     margin: auto;
     height: 70px;
-    /* border: 1px solid red; */
+
 
 }
 
@@ -719,8 +718,18 @@ footer h5 {
 }
 
 @media (max-width: 576px) {
+    .presentation .nombre .static-txt {
+        font-size: 30px;
+        padding: 5px;
+        left: 25%;
+        bottom: 72%;
+    }
 
-
+    .presentation .nombre .dinamyc-txt {
+        font-size: 20px;
+        width: 200px;
+        bottom: 60%;
+    }
 
     .DEVELOPER h3,
     .GEOFHYSICAL h3 {
@@ -776,11 +785,14 @@ footer h5 {
     .presentation img {
         height: 100%;
     }
+
     .about-me label {
         margin-top: 0px;
         margin-bottom: 35px;
     }
+
     .about-me {
-       padding-bottom: 10px;
+        padding-bottom: 10px;
     }
+
 }
