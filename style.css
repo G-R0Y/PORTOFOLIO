@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
     background-color: #0a1c26;
     width: 100%;
-    /* border: solid 5px red; */
+
 }
 
 /* -------------------- */
@@ -29,6 +29,7 @@ body {
     position: fixed;
     width: 100%;
     z-index: 100;
+
 }
 
 .encabezado {
@@ -325,7 +326,7 @@ body {
     background: #1c1c1c;
     border-radius: 20px;
     overflow: hidden;
-    border: 1px solid red;
+
 }
 
 #contact .caja {
@@ -654,6 +655,18 @@ footer h5 {
         width: 40px;
 
     }
+    .presentation .nombre .static-txt {
+        font-size: 38px;
+        padding: 5px;
+        left: 25%;
+        bottom: 50%;
+    }
+
+    .presentation .nombre .dinamyc-txt {
+        font-size: 30px;
+        left: 28%;
+        bottom: 37%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -681,6 +694,20 @@ footer h5 {
     footer .logo-f {
         height: 100px;
         width: 130px;
+    }
+    .presentation .nombre .static-txt {
+        font-size: 35px;
+        padding: 5px;
+        left: 25%;
+        bottom: 48%;
+    }
+
+    .presentation .nombre .dinamyc-txt {
+
+        font-size: 25px;
+        width: 250px;
+        left: 28%;
+        bottom: 28%;
     }
 }
 
@@ -725,26 +752,12 @@ footer h5 {
     footer img {
         height: 200px;
     }
-
-    /* .presentation .nombre {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        z-index: 2;
-    } */
-
-    .presentation .nombre .static-txt {
-        font-size: 35px;
-        padding: 5px;
-        left: 25%;
-        bottom: 48%;
+    .encabezado nav .icon-menu {
+        display: contents;
+    }
+    
+    .encabezado nav .nav {
+        display: none;
     }
 
-    .presentation .nombre .dinamyc-txt {
-
-        font-size: 25px;
-        width: 250px;
-        left: 28%;
-        bottom: 28%;
-    }
 }
