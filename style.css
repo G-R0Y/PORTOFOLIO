@@ -18,6 +18,7 @@ body {
     overflow-x: hidden;
     background-color: #0a1c26;
     width: 100%;
+    /* border: solid 5px red; */
 }
 
 /* -------------------- */
@@ -162,26 +163,30 @@ body {
 
 .presentation .limit>i {
     position: absolute;
-    border-radius: 50%;
-    background-color: white;
+    /* border-radius: 50%; */
+    transform: rotate(45deg);
+    background-color: rgb(255, 255, 255);
     z-index: 1;
 
 }
 
 .presentation .limit>i:nth-child(odd) {
 
-    box-shadow: 0px 0px 5px rgb(248, 248, 248);
-    animation: estrellas 5s linear infinite;
+    box-shadow: 0px 0px 5px rgb(14, 17, 209);
+    animation: estrellas 8s linear infinite;
 
 }
 
 @keyframes estrellas {
     0% {
-        filter: brightness(0.7)
+        filter: brightness(0.7);
+        transform: scale(1);
     }
 
     100% {
-        filter: brightness(5)
+        filter: brightness(5);
+        transform: scale(1.3);
+
     }
 }
 
@@ -194,7 +199,7 @@ body {
     text-align: center;
     margin: auto;
     max-width: var(--width-desktop);
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .about-me:before {
@@ -227,7 +232,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 60vh;
-    overflow: hidden;
 }
 
 .DEVELOPER h2,
@@ -250,6 +254,7 @@ body {
     font-size: 18px;
     display: none;
     z-index: 6;
+    padding: 0px 20px;
 }
 
 .DEVELOPER:hover h3,
@@ -275,8 +280,8 @@ body {
 .DEVELOPER img,
 .GEOFHYSICAL img {
     width: 100%;
-    border-radius: 50px;
     height: 100%;
+    border-radius: 50px;
 
 }
 
@@ -313,24 +318,22 @@ body {
 /* ------------------- */
 
 
-#contact {
-    height: 100vh;
-}
-
 .contact {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 550px;
     background: #1c1c1c;
     border-radius: 20px;
     overflow: hidden;
+    border: 1px solid red;
 }
 
 #contact .caja {
     margin-top: 80px;
-    height: calc(100vh - 120px);
+    margin-bottom: 80px;
     display: flex;
     align-items: center;
+
 }
 
 .borderojo {
@@ -414,6 +417,7 @@ body {
         transform: rotate(360deg);
     }
 }
+
 
 .contact form h2 {
     color: #fff;
@@ -540,7 +544,7 @@ footer .gif {
     position: absolute;
     bottom: 20px;
     animation: caminar 40s linear infinite;
-z-index: 5;
+    z-index: 5;
 }
 
 @keyframes caminar {
@@ -555,8 +559,8 @@ z-index: 5;
     }
 }
 
-footer .l-f{
-    display:flex;
+footer .l-f {
+    display: flex;
     height: 250px;
 
 }
@@ -569,34 +573,91 @@ footer .logo-f {
     border-radius: 50%;
     margin-bottom: 80px;
 }
-footer .icon-social{
-    display:flex;
-    gap:  50px;
+
+footer .icon-social {
+    display: flex;
+    gap: 50px;
 
 }
 
-footer .icon-social img{
+footer .icon-social img {
     height: 40px;
     width: 40px;
     position: relative;
-  background-color: #ebeff39d;
-  padding: 2px;
-  border-radius: 5px;
+    background-color: #ebeff39d;
+    padding: 2px;
+    border-radius: 5px;
 }
-footer h4{
+
+footer h4 {
     text-align: center;
     font-size: 35px;
     text-shadow: 1px 0px 0px var(--text-color),
         0px 1px 0px var(--text-color),
         -1px 0px 0px var(--text-color),
         0px -1px 0px var(--text-color);
-} 
+}
 
-footer h5{
+footer h5 {
 
     position: absolute;
     bottom: -5px;
     text-align: center;
     color: var(--text-color);
+}
+
+
+/* responsive */
+
+
+@media (max-width: 1270px) {
+    /* .presentation .nombre .static-txt {
+        font-size: 45px;
+    }
+
+    .presentation .nombre .dinamyc-txt {
+        font-size: 25px;
+    } */
+
+    .DEVELOPER h2,
+    .GEOFHYSICAL h2 {
+        font-size: 40px;
+    }
+
+    .DEVELOPER h3,
+    .GEOFHYSICAL h3 {
+        font-size: 17px;
+    }
+
+    .CV a {
+        font-size: 20px;
+    }
+
+    .CV div {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .DEVELOPER h3,
+    .GEOFHYSICAL h3 {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .DEVELOPER h3,
+    .GEOFHYSICAL h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .DEVELOPER h3,
+    .GEOFHYSICAL h3 {
+        font-size: 16px;
+    }
+
 }
 
