@@ -609,21 +609,6 @@ footer h5 {
 @media (max-width: 1270px) {
 
 
-    .about-me label {
-        font-size: 75px;
-        margin-bottom: 35px;
-    }
-
-    .DEVELOPER h2,
-    .GEOFHYSICAL h2 {
-        font-size: 50px;
-    }
-
-    .DEVELOPER h3,
-    .GEOFHYSICAL h3 {
-        font-size: 17px;
-    }
-
     .CV a {
         font-size: 20px;
     }
@@ -701,6 +686,8 @@ footer h5 {
 
 @media (max-width: 576px) {
 
+
+
     .DEVELOPER h3,
     .GEOFHYSICAL h3 {
         font-size: 16px;
@@ -737,5 +724,27 @@ footer h5 {
 
     footer img {
         height: 200px;
+    }
+
+    /* .presentation .nombre {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: 2;
+    } */
+
+    .presentation .nombre .static-txt {
+        font-size: 35px;
+        padding: 5px;
+        left: 25%;
+        bottom: 48%;
+    }
+
+    .presentation .nombre .dinamyc-txt {
+
+        font-size: 25px;
+        width: 250px;
+        left: 28%;
+        bottom: 28%;
     }
 }
