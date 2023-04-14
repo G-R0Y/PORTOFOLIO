@@ -14,8 +14,8 @@
     --text-color: #f0f8ff;
 }
 
-.body {
-    /* overflow-x: hidden; */
+body {
+    overflow-x: hidden;
     background-color: #0a1c26;
     width: 100%;
 
@@ -208,8 +208,7 @@
 .degra {
     position: relative;
     top: -50px;
-    left: -50%;
-    width: 200%;
+    width: 100%;
     height: 100px;
     background: linear-gradient(to top, #0a1c26, #322117, transparent);
     z-index: 5;
