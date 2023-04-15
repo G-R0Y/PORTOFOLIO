@@ -25,10 +25,16 @@ function rain() {
     while (i < amount) {
         let start = document.createElement('i');
 
-        let size = Math.random() * 2 + 1;
         let posX = Math.random() * window.innerWidth - 250;
         let delay = Math.random() * -10;
         let duration = 7 + Math.random() * 3;
+        let size = Math.random() + 0.5;
+
+        // if (window.width > 576) {
+
+        // } else {
+        //     let size = Math.random() * 2 + 1;
+        // }
 
         start.style.width = size + 'px';
         start.style.left = posX + 'px';
@@ -71,18 +77,20 @@ function mStart() {
 mStart();
 
 // efectro navnab
-if(window.width > 576 ) {
- window.addEventListener('scroll', function () {
-    let header = document.querySelector('.header');
-    let scrollBajo = window.scrollY - 300
-    header.style.backgroundColor = 'hsla(201, 59%, 10%, ' + scrollBajo / 500 + ')'
-})
-}else{
+if (window.width > 576) {
     window.addEventListener('scroll', function () {
         let header = document.querySelector('.header');
-        let scrollBajo = window.scrollY +20
-        header.style.backgroundColor = 'hsla(201, 59%, 10%, ' + scrollBajo / 500 + ')'
-    }) 
+        let scrollBajo = (window.scrollY - 200) / 500
+        header.style.backgroundColor = 'hsla(201, 59%, 10%, ' + scrollBajo + ')'
+    })
+}
+else {
+    window.addEventListener('scroll', function () {
+        let header = document.querySelector('.header');
+        let scrollBajo = (window.scrollY + 20) / 500
+        console.log(scrollBajo)
+        header.style.backgroundColor = 'hsla(201, 59%, 10%, ' + scrollBajo + ')'
+    })
 }
 
 
